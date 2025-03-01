@@ -29,7 +29,6 @@ window.onload = () => {
     audio.load();
   };
 
-  // Initialize the first song
   updateSongTitle();
 
   const updateProgressBar = () => {
@@ -59,14 +58,18 @@ window.onload = () => {
   forward.addEventListener("click", () => {
     currentSongIndex = (currentSongIndex + 1) % songTitles.length;
     updateSongTitle();
-    audio.play();
+    if (playPauseButton.src.includes("pause.png")) {
+      audio.play();
+    }
   });
 
   backward.addEventListener("click", () => {
     currentSongIndex =
       (currentSongIndex - 1 + songTitles.length) % songTitles.length;
     updateSongTitle();
-    audio.play();
+    if (playPauseButton.src.includes("pause.png")) {
+      audio.play();
+    }
   });
 
   audio.addEventListener("ended", () => {

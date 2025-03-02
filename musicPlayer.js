@@ -1,8 +1,11 @@
 window.onload = () => {
   const song = [];
   song["01. Title"] = "music/01. Title.mp3";
+  song["23. The vengence for those forgotten in darkness"] =
+    "music/23. THE VENGEANCE OF THOSE FORGOTTEN IN DARKNESS.mp3";
   song["87. I Just Love The 50s!!!"] = "music/87.I Just Love The 50s!!!.mp3";
   song["100. Not So Empty House"] = "music/100. Not-So-Empty-House.mp3";
+  song["106. golden vengence"] = "music/106. GOLDENVENGEANCE.mp3";
   song["124. Flouring With You"] = "music/124. Flouring With You.mp3";
   song["127. Rembering To Be Patient"] =
     "music/127. Remember To Be Patient.mp3";
